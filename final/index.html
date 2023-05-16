@@ -1,0 +1,151 @@
+
+     <!doctype html>
+     <html lang="es">
+     <head>
+         <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+         <meta name="autor" content="Jesus Varela">
+         <meta name="description" content="Final">
+         <meta name="keywords" content="Bootstrap, Bootstrap 5.3, framework, html, css, maquetación web, Cholula, Pueblo mágico">
+         <title> Jesus Varela Final </title>
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+         <link href="css/estilos.css" rel="stylesheet" type="text/css">
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poltawski+Nowy&display=swap" rel="stylesheet">
+        </head>
+    
+       <body>
+       <header>
+       <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary nav-principal">
+       <div class="container-fluid">
+       <a class="navbar-brand" href="#">Francisco de Goya</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#biografía">Biografía</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="pagina/galeria.html">Galería "90´s"</a>
+                   </li>
+                   <li class="nav-item">
+                    <a class="nav-link" href="pagina/desastre.html">Desastre de la Guerra</a>
+                    </li>
+        <li class="nav-item">
+         <a class="nav-link" href="pagina/restauracion.html">Restauración</a>
+         </li>
+                   <li class="nav-item">
+                     <a class="nav-link" href="pagina/llegar.html">Cómo llegar</a>
+                   </li>
+                 </ul>
+                
+               </div>
+             </div>
+           </nav>
+     
+         </header>
+     
+         <!-- En Bootstrap trabajamos con tres tipos de contenedor: de ancho fijo (.container), fluido (.container-fluid) y de ancho específico (.container-{breakpoint}). Este último es específico para la versión 5.-->
+         <div class="container principal">
+         
+         <!-- En Bootstrap la clase .row indica una fila. Para más información de filas y columnas en Bootstrap revisa el link https://getbootstrap.com/docs/5.3/layout/grid/  -->  
+         <div class="row">
+           <!-- En Bootstrap la clase .col indica las columnas que estarán en el contenedor row. Podemos escribir la clase col o podemos indicar con número del 1 al 12 la cantidad de columnas que deberá abarcar.-->
+           <div class="col-12">
+     
+             <!-- Este es un ejemplo de Carrusel con los elementos que proporciona Bootstrap. en este ejemplo estamos usando indicadores y textos de caption.
+             Para más referencias puedes consultar https://getbootstrap.com/docs/5.3/components/carousel/ -->
+     
+             <!-- En la versión 5 los ejemplos de carrusel no están inicializados y hay que hacerlo de manera manual. En este caso, usamos el ejemplo que tiene indicadores, flechas y caption y tuvimos que agregar el atributo  data-bs-ride="false" en la primer línea para que el carrusel esté activo  -->
+             <div id="carouselExampleCaptions" class="carousel slide carousel-home" data-bs-ride="false">
+               <div class="carousel-indicators">
+                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+               </div>
+               <div class="carousel-inner">
+                 <div class="carousel-item active">
+                   <img src="img/carrusel1.png" class="d-block w-100" alt="">
+                   <div class="carousel-caption d-none d-md-block">
+                     <h5>La familia de Carlos IV</h5>
+                   </div>
+                 </div>
+                 <div class="carousel-item">
+                   <img src="img/quita.png" class="d-block w-100" alt="Cholula">
+                   <div class="carousel-caption d-none d-md-block">
+                     <h5>El quitasol</h5>
+                   </div>
+                 </div>
+                 <div class="carousel-item">
+                   <img src="img/maja.png" class="d-block w-100" alt="...">
+                   <div class="carousel-caption d-none d-md-block">
+                     <h5>Detalle de La maja vestida</h5>
+                   </div>
+                 </div>
+               </div>
+               <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                 <span class="visually-hidden">Previous</span>
+               </button>
+               <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                 <span class="visually-hidden">Next</span>
+               </button>
+             </div>
+     
+        
+     <div class="row bloque-interno">
+        <div class="col-7">
+         <h2 id="tipico">Biografía</h2>
+         <p>Francisco José de Goya y Lucientes  30 de marzo de 1746 Burdeos, 16 de abril de 1828 fue un pintor y grabador español. Su obra abarca la pintura de caballete y mural, el grabado y el dibujo. Su estilo evolucionó desde el rococó, pasando por el neoclasicismo, hasta el prerromanticismo, siempre interpretados de una forma personal y original, y siempre con un rasgo subyacente de naturalismo, del reflejo de la realidad sin una visión idealista que la edulcore ni desvirtúe, donde es igualmente importante el mensaje ético. Para Goya la pintura es un vehículo de instrucción moral, no un simple objeto estético.
+            <br>
+        Sus referentes más contemporáneos fueron: Giambattista Tiepolo y Anton Raphael Mengs, aunque también recibió la influencia de Diego Velázquez y Rembrandt. El arte goyesco supone uno de los puntos de inflexión que entre los siglos xviii y xix anuncian la pintura contemporánea y es precursor de algunas de las vanguardias pictóricas del siglo xx, especialmente el expresionismo.Por todo ello, se le considera uno de los artistas españoles más relevantes y uno de los grandes maestros de la historia del arte mundial. </p>
+         
+         <h2 id="sabias">Obras</h2>
+        <p>Además, su obra refleja el convulso periodo histórico en que vive, particularmente la guerra de la Independencia, de la que la serie de estampas de Los desastres de la guerra es casi un reportaje moderno de las atrocidades cometidas7​ y compone una visión exenta de heroísmo donde las víctimas son siempre los individuos de cualquier clase y condición. Elogiado por Gustave Doré y E.T.A. Hoffmann, Charles Baudelaire describió su Capricho 43 como "cauchemar plein de choses inconnues".8​
+            Gran popularidad tiene su Maja desnuda, en parte favorecida por la polémica generada en torno a la identidad de la bella retratada. De comienzos del siglo xix datan también otros retratos que emprenden el camino hacia el nuevo arte burgués. Al final del conflicto hispano-francés pintó dos grandes cuadros a propósito de los sucesos del levantamiento del Dos de Mayo de 1808, que sentaron un precedente tanto estético como temático para el cuadro de historia, que no solo comenta sucesos próximos a la realidad que vive el artista, sino que alcanza un mensaje universal. Entre otros trabajos suyos, su obra culminante abarca los Disparates,9​ al igual que la serie de pinturas al óleo sobre el muro seco, las Pinturas negras, con que decoró su casa de campo, la Quinta del Sordo.9​ En ellas Goya anticipó la pintura contemporánea y los variados movimientos de vanguardia que marcarían el siglo xx y son, según J. M. Matilla, jefe de Conservación de Dibujos y Estampas del Museo Nacional del Prado, «las primeras manifestaciones del carácter verdaderamente moderno de Goya, al que no debemos dudar en calificar de primer artista moderno»</p>
+        </div>
+       
+         <div class="col-5">
+         <img src="img/bio.png" alt="Cholula"   class="img-fluid  mx-auto d-block">
+        </div>
+        
+     </div>
+     <div class="row bloque-interno"> 
+     <h2 id="informacion">Solicita información</h2>
+     <form>
+       <div class="mb-3">
+         <label  class="form-label">Nombre completo</label>
+         <input type="text" class="form-control"  placeholder="Escribe tu nombre completo">
+         <div id="emailHelp" class="form-text"></div>
+       </div>
+       <div class="mb-3">
+         <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
+         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Escribe tu correo electrónico">
+         <div id="emailHelp" class="form-text"></div>
+       </div>
+       <div class="mb-3">
+         <label  class="form-label">Indica el tipo de información que requieres</label>
+         <!-- en este caso usamos textarea en vez de input para incluir contenido en forma de texto largo -->
+         <textarea class="form-control" placeholder="Describe la información que necesites"></textarea>
+       
+       </div>
+       <div class="mb-3 form-check">
+         <input type="checkbox" class="form-check-input" id="exampleCheck1">
+         <label class="form-check-label" for="exampleCheck1">Acepto políticas</label>
+       </div>
+       <button type="submit" class="btn btn-primary">Solicitar</button>
+     </form>
+     
+     </div>
+     </div>
+     
+     
+     
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+       </body>
+     </html>
+     

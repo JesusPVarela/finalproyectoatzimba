@@ -1,0 +1,85 @@
+body {
+    background-color: #04070C;
+    background-image: url(../img/fondo.png);
+    background-position:0%;
+    background-repeat:calc() ;
+    background-size:auto;
+    background-position: left top;
+    background-repeat: repeat;
+    /* background-size: cover; */ /* posibles valores cover y contain */
+    background-attachment: fixed;
+    font-family: 'Righteous', cursive;
+    color:#380000;
+}
+/* Creamos un estilo para el contenedor principal diferente a la clase .container de Bootstrap para no interferir en sus estilos */
+.principal {
+    background-color: #6B6864;
+    margin-top: 30px;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    padding: 20px;
+}
+/* Estilos generales */
+/* ---------- Estilos generales --------- */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poltawski Nowy', serif;
+    color:#ffffff;
+}
+a, a:link, a:visited {
+    color: #53514f;
+}
+a:hover, a:focus {
+    color: #3b332b;
+}
+.btn {
+    border-radius: 10px;
+}
+.btn-chol1, .btn-chol1:visited {
+    background-color: #1d1c1c;
+    color: #fff;
+}
+.btn-chol1:hover, .btn-chol1:focus, .btn-chol1:visited {
+    background-color: #1d1c1c;
+    color: #fff;
+}
+
+
+/* ---------- Navegación principal --------- */
+.nav-principal {
+    margin-bottom: 50px;
+    background-color: #2F2621 !important
+}
+.nav-principal a, .nav-principal a:link, .nav-principal a:visited {
+    color: #ffffff;
+}
+.nav-principal a:hover, .nav-principal a:focus {
+    color: #ffffff;
+}
+.nav-principal .nav-link.active {
+    color: #F8F4D7;
+}
+
+/* ---------- Carrusel Home ---------------*/
+.carousel-home {
+    margin-bottom: 40px;
+}
+.carousel-home h5 {
+    color: #fff;
+}
+
+/* ------------Bloques internos ------------*/
+.bloque-interno {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+/* ------------ Mapa ----------- */
+.mapa-emb {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.mapa-emb .embed-responsive-item {
+    width: 100%;
+    height: 450px;
+}
